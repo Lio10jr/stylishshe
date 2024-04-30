@@ -1,0 +1,117 @@
+<app-header menu="inicio"></app-header>
+<!-- Presentacion -->
+<div class="relative overflow-hidden bg-white">
+    <div class="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
+        <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+            <div class="sm:max-w-lg">
+                <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Descubre lo último en moda
+                    femenina
+                </h1>
+                <p class="mt-4 text-xl text-gray-500">Explora nuestra colección exclusiva de ropa para mujer, diseñada
+                    para mujeres modernas y sofisticadas que buscan destacar en cualquier ocasión. Desde vestidos
+                    elegantes hasta prendas casuales, encuentra tu estilo único con nosotros.</p>
+            </div>
+            <div>
+                <div class="mt-10">
+                    <!-- Decorative image grid -->
+                    <div aria-hidden="true"
+                        class="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
+                        <div
+                            class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+                            <div class="flex items-center space-x-6 lg:space-x-8">
+                                <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                                    <div class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+                                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+                                            alt="" class="h-full w-full object-cover object-center">
+                                    </div>
+                                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg"
+                                            alt="" class="h-full w-full object-cover object-center">
+                                    </div>
+                                </div>
+                                <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg"
+                                            alt="" class="h-full w-full object-cover object-center">
+                                    </div>
+                                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
+                                            alt="" class="h-full w-full object-cover object-center">
+                                    </div>
+                                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg"
+                                            alt="" class="h-full w-full object-cover object-center">
+                                    </div>
+                                </div>
+                                <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg"
+                                            alt="" class="h-full w-full object-cover object-center">
+                                    </div>
+                                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg"
+                                            alt="" class="h-full w-full object-cover object-center">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="productos"
+                        class="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700">Ver
+                        Colección
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+            <h2 class="text-2xl font-bold text-gray-900 py-16">Categorias</h2>
+
+            <div class="grid grid-cols-4 md:grid-cols-4 gap-5">
+                <div *ngFor="let cat of categorias" class="card">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="38px"
+                            width="38px" version="1.1" id="heart" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                            <linearGradient id="gradientColor">
+                                <stop offset="5%" stop-color="#7eaaff"></stop>
+                                <stop offset="95%" stop-color="#ff48fb"></stop>
+                            </linearGradient>
+                            <g>
+                                <path
+                                    d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                    <p class="title">{{cat.nombre}}</p>
+                    <p class="text">{{cat.descripcion}}</p>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold text-gray-900 py-16">Marcas</h2>
+
+            <div class="grid grid-cols-3 md:grid-cols-3 gap-5">
+
+                <a href="marcas"  *ngFor="let mar of marcas"
+                    class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                        [src]="mar.img" alt="">
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{mar.nombre}}</h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{mar.descripcion}}</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+
+<app-footer></app-footer>
