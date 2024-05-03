@@ -16,7 +16,6 @@ import { FormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from 'src/environments/environment';
 import { ReactiveFormsModule } from '@angular/forms';
-import { UsuariosAdminComponent } from './pages/usuarios-admin/usuarios-admin.component';
 import { ProductosAdminComponent } from './pages/productos-admin/productos-admin.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MarcasAdminComponent } from './pages/marcas-admin/marcas-admin.component';
@@ -35,7 +34,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
     MarcasComponent,
     AuthComponent,
     AdminComponent,
-    UsuariosAdminComponent,
     ProductosAdminComponent,
     SidebarComponent,
     MarcasAdminComponent,

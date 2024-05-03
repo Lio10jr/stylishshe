@@ -8,7 +8,6 @@ import { ContactanosComponent } from './pages/contactanos/contactanos.component'
 import { MarcasComponent } from './pages/marcas/marcas.component';
 import { AuthGuard } from './guards/auth.guard';
 import { AdminComponent } from './pages/admin/admin.component';
-import { UsuariosAdminComponent } from './pages/usuarios-admin/usuarios-admin.component';
 import { ProductosAdminComponent } from './pages/productos-admin/productos-admin.component';
 import { MarcasAdminComponent } from './pages/marcas-admin/marcas-admin.component';
 import { CategoriasAdminComponent } from './pages/categorias-admin/categorias-admin.component';
@@ -47,12 +46,6 @@ const routes: Routes = [
   {
     path: 'marcas',
     component: MarcasComponent,
-  },
-  {
-    path: 'usuarios-admin',
-    component: UsuariosAdminComponent,
-    canActivate: [AuthGuard]
-    
   },
   {
     path: 'productos-admin',
