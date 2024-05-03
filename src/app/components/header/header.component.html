@@ -36,19 +36,19 @@
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="inicio"
+            <a routerLink="/inicio"
               [className]="menu == 'inicio' ? 'bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'"
               aria-current="page">INICIO</a>
-            <a href="marcas"
+            <a routerLink="/marcas"
               [className]="menu == 'marcas' ? 'bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'"
               aria-current="page">MARCAS</a>
-            <a href="productos"
+            <a routerLink="/productos"
               [className]="menu == 'productos' ? 'bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'"
               aria-current="page">PRODUCTOS</a>
-            <a href="contactanos"
+            <a routerLink="/contactanos"
               [className]="menu == 'contactanos' ? 'bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'"
               aria-current="page">CONTACTANOS</a>
-            <a href="nosotros"
+            <a routerLink="/nosotros"
               [className]="menu == 'nosotros' ? 'bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'"
               aria-current="page">NOSOTROS</a>
           </div>
@@ -80,7 +80,7 @@
             class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 bg-gray-700">
             <ul class="py-2 text-sm text-gray-700 text-gray-200" aria-labelledby="dropdownDefault">
               <li>
-                <a href="/admin"
+                <a routerLink="/admin"
                   class="block px-4 py-2 hover:bg-gray-800 dark:hover:bg-gray-600 dark:hover:text-white">Administrar</a>
               </li>
               <li>
@@ -98,14 +98,16 @@
   <div class="sm:hidden" id="mobile-menu">
     <div class="space-y-1 px-2 pb-3 pt-2">
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-      <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
-        aria-current="page">Dashboard</a>
-      <a href="#"
-        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
-      <a href="#"
-        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
-      <a href="#"
-        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+      <a routerLink="/inicio" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+        aria-current="page">Inicio</a>
+      <a routerLink="/marcas"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Marcas</a>
+      <a routerLink="/productos"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Productos</a>
+      <a routerLink="/contactanos"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contactanos</a>
+        <a routerLink="/nosotros"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Nosotros</a>
     </div>
   </div>
 </nav>
