@@ -61,7 +61,7 @@ export class ProductosAdminComponent implements OnInit {
       const imagePath = `productos/${Date.now()}`;
       const imageUrl = await this.servProductos.uploadImage(imagePath, dataUrl);
       producto.imagen = imageUrl;
-      this.servProductos.crearProd('Productos', producto).then((res) => {
+      this.servProductos.crearProd('Productos', producto).then(async (res) => {
         Swal.fire({
           title: "Producto",
           text: "Producto creado!",
@@ -70,9 +70,9 @@ export class ProductosAdminComponent implements OnInit {
           timer: 1500
         });
         this.limpiar()
-        this.listProd.push(producto);
+        this.listProd = [];
+        this.listProd = await this.servProductos.obtenerProds();
         this.hideModal();
-        //this.router.navigate(['productos-admin']);
       }).catch((e: any) => {
         console.log('Error: ' + e);
         Swal.fire({
@@ -134,7 +134,7 @@ export class ProductosAdminComponent implements OnInit {
           showConfirmButton: false,
           timer: 1500
         });
-        this.limpiar()
+        this.limpiar();
         this.listProd = [];
         this.listProd = await this.servProductos.obtenerProds();
         this.hideModal();

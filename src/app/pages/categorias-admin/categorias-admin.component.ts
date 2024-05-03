@@ -40,7 +40,7 @@ export class CategoriasAdminComponent implements OnInit {
       this.loading = true;
       let categoria = this.categoriaForm.value;
 
-      this.categoriaService.crearCategoria(categoria).then((res) => {
+      this.categoriaService.crearCategoria(categoria).then(async (res) => {
         Swal.fire({
           title: "Categoría",
           text: "Categoría creada!",
@@ -49,7 +49,8 @@ export class CategoriasAdminComponent implements OnInit {
           timer: 1500
         });
         this.limpiarFormulario();
-        this.listCategorias.push(categoria);
+        this.listCategorias = [];
+        this.listCategorias = await this.categoriaService.obtenerCategorias();
         this.hideModal();
       }).catch((error: any) => {
         console.error('Error al crear categoría:', error);

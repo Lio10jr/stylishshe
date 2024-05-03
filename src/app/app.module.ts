@@ -38,7 +38,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
     SidebarComponent,
     MarcasAdminComponent,
     CategoriasAdminComponent,
-
   ],
   imports: [
     BrowserModule,

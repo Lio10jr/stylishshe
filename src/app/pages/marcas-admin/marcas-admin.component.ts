@@ -52,7 +52,7 @@ export class MarcasAdminComponent implements OnInit {
         marca.img = imageUrl;
       }
 
-      this.marcaService.crearMarca(marca).then((res) => {
+      this.marcaService.crearMarca(marca).then(async (res) => {
         Swal.fire({
           title: "Marca",
           text: "Marca creada!",
@@ -61,7 +61,8 @@ export class MarcasAdminComponent implements OnInit {
           timer: 1500
         });
         this.limpiarFormulario();
-        this.listMarcas.push(marca);
+        this.listMarcas = [];
+        this.listMarcas = await this.marcaService.obtenerMarcas();
         this.hideModal();
       }).catch((error: any) => {
         console.error('Error al crear marca:', error);
