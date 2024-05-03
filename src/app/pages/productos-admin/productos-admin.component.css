@@ -1,0 +1,11 @@
+.modal {
+    @apply fixed inset-0 z-50 overflow-y-auto;
+  }
+  
+  .modal-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-30;
+  }
+  
+  .modal-content {
+    @apply relative mx-auto my-10 max-w-xl bg-white p-6 shadow-lg;
+  }

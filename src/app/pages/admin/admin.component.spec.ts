@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LoUltimoComponent } from './lo-ultimo.component';
+import { AdminComponent } from './admin.component';
 
-describe('LoUltimoComponent', () => {
-  let component: LoUltimoComponent;
-  let fixture: ComponentFixture<LoUltimoComponent>;
+describe('AdminComponent', () => {
+  let component: AdminComponent;
+  let fixture: ComponentFixture<AdminComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [LoUltimoComponent]
+      declarations: [AdminComponent]
     });
-    fixture = TestBed.createComponent(LoUltimoComponent);
+    fixture = TestBed.createComponent(AdminComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
