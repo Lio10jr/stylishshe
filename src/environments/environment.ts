@@ -1,11 +1,11 @@
 export const environment = {
-    production: false,
-    firebaseConfig: {
-        apiKey: "AIzaSyBYwZgsJGM4NedTvdsiGtuH5I2qHcNhCYE",
-        authDomain: "elegantstyle-6bc13.firebaseapp.com",
-        projectId: "elegantstyle-6bc13",
-        storageBucket: "elegantstyle-6bc13.appspot.com",
-        messagingSenderId: "1098056362877",
-        appId: "1:1098056362877:web:91fcc338e0effc20af3a14"
-      }
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyByZ7MnRJTgp_NvhbUnm6Pq9TpoKxujoEk",
+    authDomain: "elegantstyle-ae71f.firebaseapp.com",
+    projectId: "elegantstyle-ae71f",
+    storageBucket: "elegantstyle-ae71f.appspot.com",
+    messagingSenderId: "197720928695",
+    appId: "1:197720928695:web:06f0d77db1f68ccb663832"
+  }
 };
