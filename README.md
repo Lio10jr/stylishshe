@@ -1,27 +1,34 @@
-# Elegantstyle
+# Stylishshe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
+![Catalogo de venta de ropa](https://github.com/user-attachments/assets/60c8a49a-a72e-4f17-9aa7-92ff7a75ad75)
 
-## Development server
+## Tabla de Contenido
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. [Introducción](#introducción)
+2. [Características](#características)
+3. [Tecnologías](#tecnologías)
+4. [Contacto](#contacto)
 
-## Code scaffolding
+## Introducción
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Stylishshe es un sistema de catalogo donde se visualiza los productos a vender y las marcas de cada producto, cuenta con un administrar para agregar los productos y las marcas.
 
-## Build
+## Características
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Administra productos**
+- **Administra marcas**
+- **Vista principal con todas las caracteristicas, vista de productos, marcas, contacto**
 
-## Running unit tests
+## Tecnologías
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Angular**
+- **Firebase**
 
-## Running end-to-end tests
+## Contacto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Si tienes alguna pregunta, sugerencia o necesitas soporte, no dudes en ponerte en contacto conmigo:
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Nombre**: Kevin Steven Zambrano Macas
+- **Email**: kevinzambrano593@gmail.com
+- **LinkedIn**: [Lio ZM](https://www.linkedin.com/in/lio-zm-09883431a/)
+- **GitHub**: [Lio10](https://github.com/Lio10jr)
